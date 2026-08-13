@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Anniversary ❤️</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+      background: #050505;
+      color: white;
+      font-family: "Segoe UI", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    /* กล่องข้อความ */
+    .content {
+      position: relative;
+      z-index: 10;
+      padding: 40px 25px;
+      max-width: 650px;
+      animation: fadeIn 2s ease;
+    }
+
+    .heart-main {
+      font-size: 80px;
+      animation: heartbeat 1.4s infinite;
+      filter: drop-shadow(0 0 25px #ff2d75);
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: clamp(35px, 8vw, 65px);
+      color: #ff4d88;
+      text-shadow:
+        0 0 10px #ff2d75,
+        0 0 30px #ff2d75;
+    }
+
+    .subtitle {
+      margin-top: 15px;
+      font-size: 22px;
+      color: #eee;
+    }
+
+    .message {
+      margin-top: 30px;
+      padding: 25px;
+      border: 1px solid rgba(255, 77, 136, 0.4);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+      box-shadow: 0 0 30px rgba(255, 45, 117, 0.15);
+      line-height: 1.9;
+      font-size: 18px;
+      backdrop-filter: blur(5px);
+    }
+
+    .date {
+      margin-top: 25px;
+      color: #ff8fb3;
+      font-size: 17px;
+    }
+
+    /* หัวใจลอย */
+    .hearts {
+      position: fixed;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      color: #ff3b7a;
+      font-size: 20px;
+      opacity: 0;
+      animation: floatUp linear infinite;
+      text-shadow: 0 0 10px #ff2d75;
+    }
+
+    .heart:nth-child(1) {
+      left: 5%;
+      animation-duration: 8s;
+      animation-delay: 1s;
+      font-size: 22px;
+    }
+
+    .heart:nth-child(2) {
+      left: 15%;
+      animation-duration: 11s;
+      animation-delay: 3s;
+      font-size: 35px;
+    }
+
+    .heart:nth-child(3) {
+      left: 28%;
+      animation-duration: 9s;
+      animation-delay: 5s;
+    }
+
+    .heart:nth-child(4) {
+      left: 40%;
+      animation-duration: 13s;
+      animation-delay: 2s;
+      font-size: 28px;
+    }
+
+    .heart:nth-child(5) {
+      left: 52%;
+      animation-duration: 10s;
+      animation-delay: 6s;
+      font-size: 40px;
+    }
+
+    .heart:nth-child(6) {
+      left: 65%;
+      animation-duration: 12s;
+      animation-delay: 1s;
+    }
+
+    .heart:nth-child(7) {
+      left: 78%;
+      animation-duration: 9s;
+      animation-delay: 4s;
+      font-size: 30px;
+    }
+
+    .heart:nth-child(8) {
+      left: 90%;
+      animation-duration: 14s;
+      animation-delay: 2s;
+      font-size: 25px;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) scale(0.7) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: translateY(-50vh) scale(1.1) rotate(15deg);
+      }
+
+      100% {
+        transform: translateY(-115vh) scale(0.8) rotate(-15deg);
+        opacity: 0;
+      }
+    }
+
+    @keyframes heartbeat {
+      0%, 100% {
+        transform: scale(1);
+      }
+
+      15% {
+        transform: scale(1.18);
+      }
+
+      30% {
+        transform: scale(1);
+      }
+
+      45% {
+        transform: scale(1.12);
+      }
+
+      60% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- หัวใจพื้นหลัง -->
+  <div class="hearts">
+    <div class="heart">♥</div>
+    <div class="heart">❤</div>
+    <div class="heart">♥</div>
+    <div class="heart">💗</div>
+    <div class="heart">❤</div>
+    <div class="heart">♥</div>
+    <div class="heart">💖</div>
+    <div class="heart">❤</div>
+  </div>
+
+  <!-- เนื้อหา -->
+  <main class="content">
+
+    <div class="heart-main">❤️</div>
+
+    <h1>Happy Anniversary</h1>
+
+    <div class="subtitle">
+      สุขสันต์วันครบรอบนะคะ/ครับ 💕
+    </div>
+
+    <div class="message">
+      ถึงคนพิเศษของเค้า 💗<br><br>
+
+      ขอบคุณที่เข้ามาเป็นรอยยิ้มในทุกๆ วันนะ<br>
+      ขอบคุณสำหรับทุกช่วงเวลาที่เราได้อยู่ด้วยกัน<br>
+      ไม่ว่าจะวันที่มีความสุข หรือวันที่เหนื่อย<br>
+      เค้าก็ยังอยากมีเธออยู่ข้างๆ แบบนี้ไปนานๆ 🥺<br><br>
+
+      <strong>รักเธอที่สุดเลยนะ ❤️</strong><br>
+      และจะรักให้มากขึ้นในทุกๆ วัน
+    </div>
+
+    <div class="date">
+      ✨ อยู่ด้วยกันไปนานๆ นะ ✨
+    </div>
+
+  </main>
+
+</body>
+</html>
